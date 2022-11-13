@@ -2,9 +2,12 @@ Package: basel
 Title: helps you calculation the capital requirement
 Version: 0.0.0.9000
 Authors@R: 
-    person("Tobias", "Bender", , "gitbender@gmx.com", role = c("aut", "cre")
+    person("Tobias", "Bender", , "gitbender@gmx.com", role = c("aut", "cre"))
 Description: the package maps the formulas of the IRB capital requirements for credit risk of the crr in the consolidated version of 08/07/2022.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.0
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

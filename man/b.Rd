@@ -17,7 +17,8 @@ The maturity adjustment factor b according to Sub-Section 2 Article 153 1. iii)
 }
 \examples{
 
-b(0.02) - for PD of 2\%
+PD <- 0.002
+b(PD)
 
 
 }

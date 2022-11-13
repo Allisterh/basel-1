@@ -9,7 +9,8 @@
 #'
 #' @examples
 #'
-#' b(0.02) - for PD of 2%
+#' PD <- 0.002
+#' b(PD)
 #'
 #'
 b <- function(PD){
