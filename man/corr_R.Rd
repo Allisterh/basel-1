@@ -4,21 +4,29 @@
 \alias{corr_R}
 \title{coefficient of correlation R}
 \usage{
-corr_R(PD)
+corr_R(PD, AVC = 1)
 }
 \arguments{
 \item{PD}{enter the PD as a decimal number}
+
+\item{AVC}{enter the AVC factor to 1.15 for all exposures to large financial sector entities or to unregulated financial
+sector entities.
+default is 1}
 }
 \value{
 A Number
 }
 \description{
 The coefficient of correlation R according to Sub-Section 2 Article 153 1. iii)
+for exposures to corporates, institutions and central governments and central banks
 }
 \examples{
 
 PD <- 0.002
 corr_R(PD)
 
+#exposure to large financial sector entities
+PD <- 0.002
+corr_R(PD, AVC=1.15)
 
 }
