@@ -11,7 +11,7 @@ corr_R(PD, AVC = 1)
 
 \item{AVC}{enter the AVC factor to 1.15 for all exposures to large financial sector entities or to unregulated financial
 sector entities.
-default is 1}
+default value is 1.}
 }
 \value{
 A Number
