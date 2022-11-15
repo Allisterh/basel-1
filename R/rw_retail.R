@@ -24,7 +24,7 @@
 #' LGD <- 0.12
 #' rw_retail(PD,LGD)
 #'
-#' #simulate Basel IV effects without factor
+#' #simulate Basel IV effects without factor#'
 #' PD <- 0.002
 #' LGD <- 0.12
 #' rw_retail(PD,LGD, S=1)
@@ -32,5 +32,5 @@
 rw_retail <- function(PD,LGD, R=0.15, S=1.06){
   stopifnot("PD input must be numeric" = is.numeric(PD))
   stopifnot("LGD input must be numeric" = is.numeric(LGD))
-  (LGD * pnorm(1 / sqrt(1 - R) * qnorm(PD) + sqrt(R / (1 - R)) * qnorm(0.999)) - LGD * PD) * 12.5 * S
+  (LGD * stats::pnorm(1 / sqrt(1 - R) * stats::qnorm(PD) + sqrt(R / (1 - R)) * stats::qnorm(0.999)) - LGD * PD) * 12.5 * S
 }

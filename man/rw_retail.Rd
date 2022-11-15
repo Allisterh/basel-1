@@ -31,7 +31,7 @@ PD <- 0.002
 LGD <- 0.12
 rw_retail(PD,LGD)
 
-#simulate Basel IV effects without factor
+#simulate Basel IV effects without factor#'
 PD <- 0.002
 LGD <- 0.12
 rw_retail(PD,LGD, S=1)
