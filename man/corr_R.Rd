@@ -9,7 +9,7 @@ corr_R(PD, AVC = 1)
 \arguments{
 \item{PD}{enter the PD as a decimal number}
 
-\item{AVC}{enter the AVC factor to 1.15 for all exposures to large financial sector entities or to unregulated financial
+\item{AVC}{enter the AVC factor to 1.25 for all exposures to large financial sector entities or to unregulated financial
 sector entities.
 default value is 1.}
 }

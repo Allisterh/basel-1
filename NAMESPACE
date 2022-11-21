@@ -2,4 +2,5 @@
 
 export(b)
 export(corr_R)
+export(rw_corp)
 export(rw_retail)

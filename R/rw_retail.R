@@ -1,4 +1,3 @@
-
 #' Risk weight for non defaulted retail exposures
 #'
 #' Calculated the risk weight according to Sub-Section 2 Article 154 1. ii) for non defaulted retail exposures (0 < PD < 1).
@@ -24,7 +23,7 @@
 #' LGD <- 0.12
 #' rw_retail(PD,LGD)
 #'
-#' #simulate Basel IV effects without factor#'
+#' #simulate Basel IV effects without factor 1.06#'
 #' PD <- 0.002
 #' LGD <- 0.12
 #' rw_retail(PD,LGD, S=1)

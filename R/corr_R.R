@@ -5,7 +5,7 @@
 #' for exposures to corporates, institutions and central governments and central banks
 #'
 #' @param PD enter the PD as a decimal number
-#' @param AVC enter the AVC factor to 1.15 for all exposures to large financial sector entities or to unregulated financial
+#' @param AVC enter the AVC factor to 1.25 for all exposures to large financial sector entities or to unregulated financial
 #' sector entities.
 #' default value is 1.
 #'
