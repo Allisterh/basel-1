@@ -1,16 +1,16 @@
 #' Risk weight for non defaulted retail exposures
 #'
-#' Calculated the risk weight according to Sub-Section 2 Article 154 1. ii) for non defaulted retail exposures (0 < PD < 1).
-#' In the actual version, the correlation factor R is set to 0.15 for retail exposures secured by immovable property according to
-#' to Sub-Section 2 Article 154 3..
+#' Calculates the risk weight according to Sub-Section 2 Article 154 1. ii) for non defaulted retail exposures (0 < PD < 1).
+#' In the basel package version 0.1.0, the correlation factor R is set to 0.15 for retail exposures secured by immovable property according to
+#' to Sub-Section 2 Article 154 3.
 #'
 #'
-#' @param PD enter the PD as a decimal number
-#' @param LGD enter the LGD as a decimal number
+#' @param PD Enter the PD as a decimal number.
+#' @param LGD Enter the LGD as a decimal number.
 #' @param R  R is set to 0.15 for retail exposures secured by immovable property according to
 #' to Sub-Section 2 Article 154 3.
-#' @param SK default is 1.06 according to the basel formula. You can change the value to 1, for example, to simulatethe effects
-#' from basel IV
+#' @param SK Default is 1.06 according to the basel formula. You can change the value to 1, e.g. to simulate the effects
+#' from basel IV.
 #'
 #'
 #'

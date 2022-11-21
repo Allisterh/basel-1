@@ -18,11 +18,38 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of basel is to help you calculation the capital requirements according to CRR. 
+The goal of basel is to help you calculate the capital requirements according to the CRR. 
 
 The consolidated version of the CRR from 07/08/2022 is used.
 
 https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02013R0575-20220708
+
+
+With the current basel package version 0.1.0 counterparty risk calculations can be performed for the following cases:  
+- retail exposures secured by immovable property (Article 154 1. ii)  
+- non-defaulted exposure for corporates, institutions, central governments and central banks (Article 153 1. iii) including SME and exposures to large financial sector entities
+
+
+
+
+``` r
+#calculate the risk weight for a retail customer secured by immovable property 
+library(basel)
+
+rw_retail(PD=0.015, LGD=0.10)
+
+```
+
+``` r
+#calculate the risk weight for a Corporate SME exposure with total annual sales of 30 Mio. € 
+library(basel)
+
+rw_corp(PD=0.015, LGD=0.35, SME=1, S=30)
+
+```
+
+
+
 
 
 ## Installation
