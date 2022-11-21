@@ -4,7 +4,7 @@
 \alias{corr_R}
 \title{coefficient of correlation R}
 \usage{
-corr_R(PD, AVC = 1)
+corr_R(PD, AVC = 1, SME = 0, S = 0)
 }
 \arguments{
 \item{PD}{enter the PD as a decimal number}
@@ -12,21 +12,35 @@ corr_R(PD, AVC = 1)
 \item{AVC}{enter the AVC factor to 1.25 for all exposures to large financial sector entities or to unregulated financial
 sector entities.
 default value is 1.}
+
+\item{SME}{SME exposure = 1: For SME exposures to companies where the total annual sales for the consolidated group of which the firm is a part
+is less than EUR 50 million, the formula according to Article 153  4 is used. you have to enter the annual sales in parameter S.
+
+default value is 0 for non SME exposure.}
+
+\item{S}{S is expressed as total annual sales in millions of euro. It is onle used when parameter SME = 1}
 }
 \value{
 A Number
 }
 \description{
-The coefficient of correlation R according to Sub-Section 2 Article 153 1. iii)
-for exposures to corporates, institutions and central governments and central banks
+The coefficient of correlation R according to Sub-Section 2 Article 153 1. iii for exposures to corporates,
+institutions and central governments and central banks and Article 154 4 for SME exposure.
 }
 \examples{
-
+#standard
 PD <- 0.002
 corr_R(PD)
 
 #exposure to large financial sector entities
 PD <- 0.002
 corr_R(PD, AVC=1.15)
+
+#exposures to SME
+PD<- 0.002
+SME = 1
+S = 30 #30 million euro annual sales
+corr_R(PD, SME=1, S=30)
+
 
 }

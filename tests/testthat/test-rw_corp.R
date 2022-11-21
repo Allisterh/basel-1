@@ -11,6 +11,9 @@ test_that("check expected rw for corporate unsecured with AVC", {
 })
 
 test_that("check expected rw for corporate secured, Basel IV with S=1", {
-  expect_equal(round(rw_corp(PD=0.001, LGD=0.35, S=1),7), 0.2306422)
+  expect_equal(round(rw_corp(PD=0.001, LGD=0.35, SK=1),7), 0.2306422)
 })
 
+test_that("check expected rw for corporate secured, SME with 30 Mio", {
+  expect_equal(round(rw_corp(PD=0.001, LGD=0.35, SME=1, S=30),7), 0.2205715)
+})

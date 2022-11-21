@@ -4,7 +4,7 @@
 \alias{rw_retail}
 \title{Risk weight for non defaulted retail exposures}
 \usage{
-rw_retail(PD, LGD, R = 0.15, S = 1.06)
+rw_retail(PD, LGD, R = 0.15, SK = 1.06)
 }
 \arguments{
 \item{PD}{enter the PD as a decimal number}
@@ -14,7 +14,7 @@ rw_retail(PD, LGD, R = 0.15, S = 1.06)
 \item{R}{R is set to 0.15 for retail exposures secured by immovable property according to
 to Sub-Section 2 Article 154 3.}
 
-\item{S}{default is 1.06 according to the basel formula. You can change the value to 1, for example, to simulatethe effects
+\item{SK}{default is 1.06 according to the basel formula. You can change the value to 1, for example, to simulatethe effects
 from basel IV}
 }
 \value{
@@ -34,6 +34,6 @@ rw_retail(PD,LGD)
 #simulate Basel IV effects without factor 1.06#'
 PD <- 0.002
 LGD <- 0.12
-rw_retail(PD,LGD, S=1)
+rw_retail(PD,LGD, SK=1)
 
 }
